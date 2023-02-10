@@ -7,17 +7,23 @@
         <groupId>com.unitalegio</groupId>
         <artifactId>ul-usr-mng</artifactId>
         <version>0.0.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
 
-    <groupId>com.unitalegio.ul-usr-mng</groupId>
+    <groupId>com.unitalegio.usrmng</groupId>
     <artifactId>web</artifactId>
     <version>0.0.1</version>
     <name>ul-usr-mng-web</name>
     <description>ul-usr-mng-web</description>
+    <packaging>pom</packaging>
 
     <dependencies>
         <!--            Core            -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>3.0.0</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-graphql</artifactId>
@@ -26,10 +32,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.unitalegio.usrmng</groupId>
+            <artifactId>domain</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
+        </dependency>
 
         <!--            Others           -->
 
         <!--            Testing         -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <version>6.0.1</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework.graphql</groupId>
             <artifactId>spring-graphql-test</artifactId>

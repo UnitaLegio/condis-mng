@@ -7,17 +7,27 @@
         <groupId>com.unitalegio</groupId>
         <artifactId>ul-usr-mng</artifactId>
         <version>0.0.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.unitalegio.ul-usr-mng</groupId>
+    <groupId>com.unitalegio.usrmng</groupId>
     <artifactId>domain</artifactId>
     <version>0.0.1</version>
-    <name>ul-usr-mng-data</name>
-    <description>ul-usr-mng-data</description>
-
+    <name>ul-usr-mng-domain</name>
+    <description>ul-usr-mng-domain</description>
+    <packaging>pom</packaging>
+    
     <dependencies>
-
+        <dependency>
+            <groupId>com.unitalegio.usrmng</groupId>
+            <artifactId>data</artifactId>
+            <version>0.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.unitalegio.usrmng</groupId>
+                    <artifactId>domain</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
 
 </project>

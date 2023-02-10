@@ -1,4 +1,4 @@
-package com.unitalegio.ulusrmng
+package com.unitalegio.usrmng
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
@@ -8,6 +8,7 @@ class UlUsrMngApplicationTests {
 
     @Test
     fun contextLoads() {
+
     }
 
 }

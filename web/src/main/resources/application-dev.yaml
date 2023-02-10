@@ -1,0 +1,11 @@
+# Server port 9001 for comfortable local testing
+
+server:
+  port: 9001
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://unitalegio.ml
+          jwk-set-uri: http://unitalegio.ml/oauth2/jwks

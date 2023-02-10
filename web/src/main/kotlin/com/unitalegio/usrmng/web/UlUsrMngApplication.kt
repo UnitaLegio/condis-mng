@@ -1,4 +1,4 @@
-package com.unitalegio.ulusrmng.web
+package com.unitalegio.usrmng.web
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

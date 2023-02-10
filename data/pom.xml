@@ -7,14 +7,15 @@
         <groupId>com.unitalegio</groupId>
         <artifactId>ul-usr-mng</artifactId>
         <version>0.0.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
 
-    <groupId>com.unitalegio.ul-usr-mng</groupId>
+    <groupId>com.unitalegio.usrmng</groupId>
     <artifactId>data</artifactId>
     <version>0.0.1</version>
     <name>ul-usr-mng-data</name>
     <description>ul-usr-mng-data</description>
+    <packaging>pom</packaging>
 
     <dependencies>
         <!--            Data            -->
@@ -23,15 +24,25 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-r2dbc</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-postgresql</artifactId>
+            <version>0.8.13.RELEASE</version>
         </dependency>
 
         <!--            Others          -->
 
         <!--            Test            -->
-
+        <dependency>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-h2</artifactId>
+            <version>1.0.0.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>
