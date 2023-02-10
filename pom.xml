@@ -26,9 +26,9 @@
     </properties>
 
     <modules>
-        <module>web</module>
-        <module>domain</module>
-        <module>data</module>
+        <module>ul-usr-mng-web</module>
+        <module>ul-usr-mng-domain</module>
+        <module>ul-usr-mng-data</module>
     </modules>
 
     <dependencies>
